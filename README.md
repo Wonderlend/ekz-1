@@ -13,9 +13,11 @@ import os
 
 -------------------------------------------------------------------------------------------
 ПОСЛЕ ДВУХ СТРОК 
+
 async def handle_file(file: types.File, file_name: str, path: str):
     Path(f"{path}").mkdir(parents=True, exist_ok=True)
     await bot.download_file(file_path=file.file_path, destination=f"{path}/{file_name}")
+    
 --------------------------------------------------------------------------------------------
 ПОСЛЕ ПОСЛЕДНЕГО @dp ДО if name 
 @dp.message_handler(content_types=[types.ContentType.VOICE])
@@ -31,6 +33,7 @@ async def echo_message(msg: types.Message):
     os.remove(full_path)
     del converter
     await bot.send_message(msg.from_user.id, message_text)
+    
 -------------------------------------------------------------------------
 converter.py
 
