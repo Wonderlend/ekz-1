@@ -8,7 +8,9 @@ from aiogram.utils import executor
 from converter import Converter
 from pathlib import Path
 import soundfile
-import os
+import os  
+
+
 -------------------------------------------------------------------------------------------
 ПОСЛЕ ДВУХ СТРОК 
 async def handle_file(file: types.File, file_name: str, path: str):
