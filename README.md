@@ -1,11 +1,17 @@
 САМОЕ НАЧАЛО БЕЗ ВЫДЕЛЕНИЯ ПОСЛЕДНЕЙ
 
 from aiogram import Bot, types
+
 from aiogram.dispatcher import Dispatcher
+
 from aiogram.utils import executor
+
 from converter import Converter
+
 from pathlib import Path
+
 import soundfile
+
 import os  
 
 
