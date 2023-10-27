@@ -20,6 +20,8 @@ async def handle_file(file: types.File, file_name: str, path: str):
     
 --------------------------------------------------------------------------------------------
 ПОСЛЕ ПОСЛЕДНЕГО @dp ДО if name 
+
+
 @dp.message_handler(content_types=[types.ContentType.VOICE])
 async def echo_message(msg: types.Message):
     voice = await msg.voice.get_file()
